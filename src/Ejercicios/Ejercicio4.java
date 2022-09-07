@@ -13,15 +13,18 @@ EL PRIMERO, LUEGO EL ULTIMO, EL SEGUNDO Y PENULTIMO, TERCERO, ETC.
 
         int[] numeros = new int [10]; //ARREGLO DE 10 ELEMENTOS
 
+        System.out.println("------------------------------------------------------------------------------------------");
+        System.out.println("Benvenido! Al númerotron");
         //PEDIMOS LOS DATOS DEL ARREGLO
         for (int i = 0; i < 10; i++){
             System.out.print((i+1)+". Digite un número: ");
             numeros[i] = entrada.nextInt();
         }
-        System.out.print("El resultado es: ");
+        System.out.print("\nEl resultado es: ");
         for (int i=0; i<5; i++){
             System.out.print(numeros[i] + " "); //PRIMERO, SEGUNDO
             System.out.print(numeros[9 - i] + " "); // Ultimo, PENULTIMO
         }
+        System.out.println("\n------------------------------------------------------------------------------------------");
     }
 }
